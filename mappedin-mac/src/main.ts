@@ -12,6 +12,13 @@ const options = {
 async function init() {
   const mapData = await getMapData(options);
   const mapView = await show3dMap(document.getElementById('mappedin-map') as HTMLDivElement, mapData);
-}
 
+  // Set each space to be interactive.
+  mapData.getByType('space').forEach(space => {
+    mapView.updateState(space, {
+      interactive: true,
+    });
+  });
+
+}
 init();
