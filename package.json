@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "@mappedin/mappedin-js": "alpha"
-  },
-  "devDependencies": {
-    "typescript": "^4.0.0"
-  },
-  "main": "/index.ts"
-}
