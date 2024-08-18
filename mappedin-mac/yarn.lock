@@ -117,6 +117,11 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.21.5.tgz#acad351d582d157bb145535db2a6ff53dd514b5c"
   integrity sha512-tQd/1efJuzPC6rCFwEvLtci/xNFcTZknmXs98FYDfGE4wP9ClFV98nyKrzJKVPMhdDnjzLhdUyMX4PsQAPjwIw==
 
+"@mappedin/mappedin-js@^5.40.1":
+  version "5.40.1"
+  resolved "https://registry.yarnpkg.com/@mappedin/mappedin-js/-/mappedin-js-5.40.1.tgz#4c137e4d133dcc151b95657151e21ba14329c988"
+  integrity sha512-tOaAGpqCvgBBr2YcXhVQ90LF7cU3hCA8fEqp72RN0xRoNRMKpPqv0gotebNQt+fGywGts8O78XH/NmhyNVSS/A==
+
 "@rollup/rollup-android-arm-eabi@4.21.0":
   version "4.21.0"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-android-arm-eabi/-/rollup-android-arm-eabi-4.21.0.tgz#d941173f82f9b041c61b0dc1a2a91dcd06e4b31e"
