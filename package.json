@@ -2,17 +2,17 @@
   "name": "my-app",
   "version": "1.0.0",
   "description": "My app deployed on Render.com",
-  "main": "index.js",
+  "main": "",
   "scripts": {
-    "start": "node index.js",
+    "start": "node start",
     "build": "tsc",
-    "dev": "tsc && node dist/index.js"
+    "dev": "tsc && node /scr/main.ts"
   },
   "dependencies": {
     "@mappedin/mappedin-js": "^6.0.1-alpha.36",
-    "express": "^4.17.1"
+    "express": "^4.19.2"
   },
   "devDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.5.4"
   }
 }
