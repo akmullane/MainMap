@@ -1,24 +1,17 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+import { getMapData, show3dMap } from "@mappedin/mappedin-js";
+import "@mappedin/mappedin-js/lib/index.css";
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+// See Demo API key Terms and Conditions
+// https://developer.mappedin.com/v6/demo-keys-and-maps/
+const options = {
+  key: '65ca6d27d53f21f234ae6395',
+  secret: '0b25fc24d564c644443663d0b4d083605090d349975d0983fc96e06a5b1934dd',
+  mapId: '65c0ff7430b94e3fabd5bb8c'
+};
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+async function init() {
+  const mapData = await getMapData(options);
+  const mapView = await show3dMap(document.getElementById('mappedin-map') as HTMLDivElement, mapData);
+}
+
+init();
