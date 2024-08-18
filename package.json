@@ -6,9 +6,10 @@
   "scripts": {
     "start": "node index.js",
     "build": "tsc",
-    "dev": "tsc && node dist/main.js"
+    "dev": "tsc && node dist/index.js"
   },
   "dependencies": {
+    "@mappedin/mappedin-js": "^6.0.1-alpha.36",
     "express": "^4.17.1"
   },
   "devDependencies": {
