@@ -1,5 +1,5 @@
 import { getMapData, show3dMap } from "@mappedin/mappedin-js";
-import "@mappedin/mappedin-js/lib/mappedin.css";
+import "@mappedin/mappedin-js/lib/index.css";
 
 // See Demo API key Terms and Conditions
 // https://developer.mappedin.com/v6/demo-keys-and-maps/
