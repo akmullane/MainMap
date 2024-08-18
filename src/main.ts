@@ -1,18 +1,17 @@
-import { getVenue, showVenue, E_SDK_EVENT } from '@mappedin/mappedin-js';
-import '@mappedin/mappedin-js/lib/index.css';
+import { getMapData, show3dMap } from "@mappedin/mappedin-js";
+import "@mappedin/mappedin-js/lib/index.css";
+
+// See Demo API key Terms and Conditions
+// https://developer.mappedin.com/v6/demo-keys-and-maps/
+const options = {
+    key: '65ca6d27d53f21f234ae6395',
+    secret: '0b25fc24d564c644443663d0b4d083605090d349975d0983fc96e06a5b1934dd',
+    mapId: '65c0ff7430b94e3fabd5bb8c'
+};
 
 async function init() {
-    const venueData = await getVenue({
-        clientId: '<clientId>',
-        clientSecret: '<clientSecret>',
-        venue: '<venue>',
-    });
-
-    const mapView = await showVenue(document.getElementById('mappedin-map'), venueData);
-    mapView.FloatingLabels.labelAllLocations();
-    mapView.addInteractivePolygonsForAllLocations();
-    mapView.on(E_SDK_EVENT.CLICK, ({ polygons }) => {
-        console.log(`Polygon with id ${polygons[0].id} clicked!`);
-    });
+    const mapData = await getMapData(options);
+    const mapView = await show3dMap(document.getElementById('mappedin-map') as HTMLDivElement, mapData);
 }
-document.addEventListener('DOMContentLoaded', init);
+
+init();
