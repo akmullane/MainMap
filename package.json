@@ -9,7 +9,7 @@
     "dev": "tsc && node /scr/main.ts"
   },
   "dependencies": {
-    "@mappedin/mappedin-js": "^6.0.1-alpha.36",
+    "@mappedin/mappedin-js": "^5.40.1",
     "express": "^4.19.2"
   },
   "devDependencies": {
