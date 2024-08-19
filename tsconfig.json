@@ -1,16 +1,16 @@
 {
     "compilerOptions": {
-        "target": "es6",
-        "module": "es6",
-        "outDir": "./dist",
-        "rootDir": "./src",
         "strict": true,
+        "module": "commonjs",
+        "jsx": "preserve",
         "esModuleInterop": true,
-        "baseUrl": "./",
-        "paths": {
-            "@mappedin/*": [
-                "node_modules/@mappedin/*"
-            ]
-        }
+        "sourceMap": true,
+        "allowJs": true,
+        "lib": [
+            "es6",
+            "dom"
+        ],
+        "rootDir": "src",
+        "moduleResolution": "node"
     }
 }
