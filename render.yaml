@@ -1,10 +1,10 @@
 services:
   - type: web
-    name: vite-app
+    name: my-app
     env: node
     plan: free
-    buildCommand: yarn build
-    startCommand: yarn preview --port $PORT
+    buildCommand: "npm install"
+    startCommand: "npm start"
     envVars:
       - key: NODE_ENV
         value: production
