@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: mainmap
-    env: node
-    buildCommand: npm run build
-    startCommand: npm start
-    plan: free
-    region: virginia
