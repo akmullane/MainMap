@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: vite-app
+    env: node
+    plan: free
+    buildCommand: yarn build
+    startCommand: yarn preview --port $PORT
+    envVars:
+      - key: NODE_ENV
+        value: production
