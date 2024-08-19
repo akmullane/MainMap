@@ -1,17 +1,17 @@
-import { getVenue, showVenue, TGetVenueOptions } from "@mappedin/mappedin-js";
-import "@mappedin/mappedin-js/lib/mappedin.css";
+import { getMapData, show3dMap } from "@mappedin/mappedin-js";
+import "@mappedin/mappedin-js/lib/index.css";
 
-// See Trial API key Terms and Conditions
-// https://developer.mappedin.com/guides/api-keys
-const options: TGetVenueOptions = {
-    venue: "mappedin-demo-mall",
-    clientId: "5eab30aa91b055001a68e996",
-    clientSecret: "RJyRXKcryCMy4erZqqCbuB1NbR66QTGNXVE0x3Pg6oCIlUR1"
+// See Demo API key Terms and Conditions
+// https://developer.mappedin.com/v6/demo-keys-and-maps/
+const options = {
+    key: '65ca6d27d53f21f234ae6395',
+    secret: '0b25fc24d564c644443663d0b4d083605090d349975d0983fc96e06a5b1934dd',
+    mapId: '65c0ff7430b94e3fabd5bb8c'
 };
 
 async function init() {
-    const venue = await getVenue(options);
-    const mapView = await showVenue(document.getElementById("app")!, venue);
+    const mapData = await getMapData(options);
+    const mapView = await show3dMap(document.getElementById('mappedin-map') as HTMLDivElement, mapData);
 }
 
 init();
