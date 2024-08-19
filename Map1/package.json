@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "npm run build",
-    "start": "npm run dev"
+    "build": "yarn build",
+    "start": "yarn start"
   },
   "devDependencies": {
     "typescript": "^5.5.3",
