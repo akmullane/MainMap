@@ -1,7 +1,10 @@
 services:
   - type: web
-    name: my-app
+    name: mappedin
     env: node
+    buildCommand: npm run build
+    startCommand: npm start
+    branch: main
+    publishDir: ./dist
     plan: free
-    buildCommand: "npm install"
-    startCommand: "npm start"
+    region: Virginia
