@@ -2,7 +2,7 @@
   "name": "mappedin-live-map",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "node",
     "build": "vite build",
     "start": "vite preview"
   },
