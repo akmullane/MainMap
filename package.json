@@ -1,0 +1,16 @@
+{
+  "name": "mappedin-live-map",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@mappedin/mappedin-js": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "vite": "^3.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: mappedin-live-map
+    env: static
+    buildCommand: npm run build
+    staticPublishPath: dist
