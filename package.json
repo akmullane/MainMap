@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "vite build",
-    "start": "serve dist -l $PORT"
+    "start": "serve dist"
   },
   "dependencies": {
     "@mappedin/mappedin-js": "^6.0.1-alpha.37"
