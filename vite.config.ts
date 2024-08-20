@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-    base: '/', // Adjust this if your app is served from a subpath
     build: {
         outDir: 'dist',
     },
