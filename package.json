@@ -10,6 +10,7 @@
     "@mappedin/mappedin-js": "^6.0.1-alpha.37"
   },
   "devDependencies": {
+    "@types/node": "^22.4.1",
     "typescript": "^4.9.5",
     "vite": "^3.2.10"
   }

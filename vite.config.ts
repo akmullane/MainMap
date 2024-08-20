@@ -1,15 +1,12 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-    root: 'public',
-    build: {
-        outDir: '../dist',
-        emptyOutDir: true,
-        rollupOptions: {
-            input: '/index.html',
-        },
-    },
     server: {
-        open: true,
+        host: '0.0.0.0',
+        port: process.env.PORT ? parseInt(process.env.PORT) : 4173,
+    },
+    preview: {
+        host: '0.0.0.0',
+        port: process.env.PORT ? parseInt(process.env.PORT) : 4173,
     },
 });
