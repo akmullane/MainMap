@@ -2,14 +2,15 @@
   "name": "mappedin-live-map",
   "version": "1.0.0",
   "scripts": {
-    "dev": "npm run dev",
-    "build": "npm run build",
-    "start": "npm run preview"
+    "dev": "vite",
+    "build": "vite build",
+    "start": "serve dist"
   },
   "dependencies": {
     "@mappedin/mappedin-js": "^6.0.1-alpha.37"
   },
   "devDependencies": {
+    "serve": "^14.2.3",
     "typescript": "^4.9.5",
     "vite": "^3.2.10"
   }
