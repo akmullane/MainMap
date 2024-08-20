@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "node",
-    "build": "yarn",
-    "start": "yarn start"
+    "build": "",
+    "start": ""
   },
   "dependencies": {
     "@mappedin/mappedin-js": "^6.0.1-alpha.37"
