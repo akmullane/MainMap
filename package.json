@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "node",
     "build": "npm run build",
-    "start": "vite preview"
+    "start": "tsc"
   },
   "dependencies": {
     "@mappedin/mappedin-js": "^6.0.1-alpha.37"
