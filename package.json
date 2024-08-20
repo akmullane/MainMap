@@ -2,9 +2,9 @@
   "name": "mappedin-live-map",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "start": "serve dist"
+    "dev": "node",
+    "build": "yarn",
+    "start": "yarn start"
   },
   "dependencies": {
     "@mappedin/mappedin-js": "^6.0.1-alpha.37"
